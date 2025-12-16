@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vanilla+ tactical defaults: higher camera ceilings, expanded population caps, and AI allowances to use them. -->
+<GameConstants>
+  <Tactical>
+    <!-- Camera heights (vanilla-friendly but wider by default) -->
+    <Space_Camera_Min_Height>400.0</Space_Camera_Min_Height>
+    <Space_Camera_Max_Height>2000.0</Space_Camera_Max_Height>
+    <Land_Camera_Min_Height>60.0</Land_Camera_Min_Height>
+    <Land_Camera_Max_Height>300.0</Land_Camera_Max_Height>
+
+    <!-- Population caps (roughly triple space, double land vs. stock) -->
+    <Space_Population_Cap>60</Space_Population_Cap>
+    <Space_Population_Cap_MP>60</Space_Population_Cap_MP>
+    <Land_Population_Cap>20</Land_Population_Cap>
+    <Land_Population_Cap_MP>20</Land_Population_Cap_MP>
+
+    <!-- Safety: if stability is an issue on some maps, lower Space_Population_Cap to 40. -->
+  </Tactical>
+
+  <AI>
+    <!-- Allow tactical AI to fully use the increased caps. -->
+    <AI_Max_Space_Population_Cap>60</AI_Max_Space_Population_Cap>
+    <AI_Max_Land_Population_Cap>20</AI_Max_Land_Population_Cap>
+
+    <!-- Encourage filling fleets instead of preserving undersized reserves. -->
+    <AI_Allow_Overbuild_Space>true</AI_Allow_Overbuild_Space>
+    <AI_Allow_Overbuild_Land>true</AI_Allow_Overbuild_Land>
+  </AI>
+</GameConstants>
